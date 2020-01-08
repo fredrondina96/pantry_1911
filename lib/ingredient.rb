@@ -2,7 +2,7 @@ require 'pry'
 
 class Ingredient
 
-attr_reader :name, :unit, :unit
+attr_reader :name, :unit, :calories
 
   def initialize(name, unit, calories)
     @name = name
