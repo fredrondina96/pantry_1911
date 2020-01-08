@@ -17,4 +17,11 @@ class Recipe
   def amount_required(ingredient)
     @ingredients_required[ingredient]
   end
+
+  def total_calories
+    calories = @ingredients_required.map do |ingredient|
+      ingredient.first.calories * ingredient.last
+    end
+    calories.sum
+  end
 end
