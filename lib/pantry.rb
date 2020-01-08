@@ -14,4 +14,8 @@ class Pantry
     @stock[ingredient]
   end
 
+  def restock(ingredient, amount)
+    @stock[ingredient] += amount
+    binding.pry
+  end
 end
